@@ -1,0 +1,44 @@
+INFO: {
+	NAME: "Resurrection Room",
+	NAMES: "Resurrection Rooms",
+	DESC: "Produces Undead. Each station produces one every 20th day and each station needs 1 meat per day to operate, else the resurrection will fail.",
+},
+
+
+BONUS: {
+	NAME: "Undead Resurrection",
+	DESC: "Increases the rate at which Undeads are resurrected.",
+},
+
+STATS: [
+
+	{
+		NAME: "Resurrection Tables",
+		DESC: "Amount of Resurrection Tables",
+	},
+	{
+		
+	},
+	{
+		NAME: "Efficiency",
+		DESC: "Increases resurrection rate.",
+	},
+],
+
+ITEMS: [
+	{
+		NAME: "Resurrection Table",
+		DESC: "",
+	},
+	{
+		NAME: "Furnishings",
+		DESC: "Increases efficiency.",
+	},
+],
+
+WORK: {
+	TITLE: "Resurrector",
+	VERB: "Tending the corpses.",
+},
+
+
