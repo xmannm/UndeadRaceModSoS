@@ -5,7 +5,7 @@ DESC:
 "The Necroliths were originaly a race of undead warriors, raised by the dark god Aminion during the War of the Gods. They are resilient, relentless, and possess a hunger for flesh. While their strength and skills are limited, their unwavering morale and rapidly growing numbers make them a formidable force. However, no immigration might make for a challanging start though.
 ",
 DESC_LONG:
-"Forged in the fires of chaos by the malevolent god Aminion during the first War of the Gods, the Necroliths are the most vile race of undead warriors. Initially created as relentless soldiers for Aminion's dark campaigns, they served with unwavering loyalty, driven by an insatiable hunger for flesh.
+"Forged in the fires of chaos by the malevolent god Aminion during the first War of the Gods, the Necroliths are the most vile race of undead warriors. 
 %r%%r%
 In the aftermath of Aminion's imprisonment, the Necroliths fell into a state of dormancy, their numbers dwindling as they retreated into the shadows. However, with the promise of Aminion's return, they have begun to stir once more. Modern Necroliths, though not as potent as their predecessors, remain a formidable threat to all living races.
 %r%%r%
@@ -48,6 +48,6 @@ PROS: [
 
 CONS: [
 	"Very limited skills across the board",
-	"Unremarkable in battle",
+	"Bad food producers",
 	"NO IMMIGRATION",
 ],

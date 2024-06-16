@@ -37,15 +37,24 @@ COLOR_CLOTHES: [
 COLOR_BLOOD: {R: 255, G: 30, B: 30,},
 
 COLORS: {
-	SKIN: {
+	SKIN_ZOMBIES: {
 		TURNS_WHITE_WHEN_DEAD: true,
 		VALUES: [
 			{R: 120, G: 130, B: 110,},
-			{R: 180, G: 190, B: 175,},
-			{R: 100, G: 105, B: 95,},
-			{R: 210, G: 210, B: 200,},
+			{R: 170, G: 190, B: 170,},
+			{R: 110, G: 140, B: 110,},
+			{R: 115, G: 130, B: 115,},
 		],
 	},
+	SKIN_SKELETONS: {
+		TURNS_WHITE_WHEN_DEAD: true,
+		VALUES: [
+			{R: 165, G: 165, B: 160,},
+			{R: 180, G: 180, B: 170,},
+			{R: 165, G: 170, B: 170,},
+		],
+	},
+
 	FEATURE: {
 		TURNS_WHITE_WHEN_DEAD: true,
 		VALUES: [
@@ -58,19 +67,16 @@ COLORS: {
 		TURNS_GRAY_WHEN_OLD: true,
 		VALUES: [
 			**Dark
-			{R: 52, G: 51, B: 53,},
-			{R: 43, G: 40, B: 40,},
-			{R: 47, G: 41, B: 41,},
-			{R: 67, G: 62, B: 61,},
-			{R: 51, G: 34, B: 30,},
-			{R: 68, G: 57, B: 46,},
+			{R: 70, G: 65, B: 60,},
+			{R: 80, G: 80, B: 80,},
+			{R: 75, G: 75, B: 70,},
+			{R: 80, G: 60, B: 50,},
+			{R: 75, G: 60, B: 50,},
 			**Light
-			{R: 196, G: 174, B: 153,},
-			{R: 154, G: 128, B: 101,},
-			{R: 172, G: 162, B: 140,},
-			{R: 203, G: 184, B: 139,},
-			{R: 184, G: 179, B: 174,},
-			{R: 232, G: 212, B: 156,},
+			{R: 150, G: 150, B: 150,},
+			{R: 160, G: 170, B: 170,},
+			{R: 190, G: 200, B: 200,},
+			{R: 210, G: 210, B: 190,},
 			**Red
 			{R: 136, G: 46, B: 20,},
 			{R: 210, G: 125, B: 64,},
@@ -124,7 +130,7 @@ COLORS: {
 	},
 },
 CHILD: {
-	COLOR_SKIN: SKIN,
+	COLOR_SKIN: SKIN_ZOMBIES,
 	COLOR_LEG: LEG,
 	
 	SPRITE_FILE: ChildHumanoid,
@@ -142,110 +148,173 @@ CHILD: {
 },
 
 TYPES: [
-    {
-            OCCURRENCE: 1,
-            OCCURRENCE_EXTRA1: 0.5,
-            OCCURRENCE_EXTRA2: 0.5,
-            COLOR_SKIN: SKIN,
-            COLOR_LEG: SKIN,
-            COLOR_EXTRA1: SKIN,
-            COLOR_EXTRA2: SKIN,
+    ** ZOMBIES
+	{
+		OCCURRENCE: 0.5,
+		OCCURRENCE_EXTRA1: 0.5,
+		OCCURRENCE_EXTRA2: 0.5,
+		COLOR_SKIN: SKIN_ZOMBIES,
+		COLOR_LEG: SKIN_ZOMBIES,
+		COLOR_EXTRA1: SKIN_ZOMBIES,
+		COLOR_EXTRA2: SKIN_ZOMBIES,
 
-            		SPRITE_FILE: Undead,
-			SPRITE_SKELLETON_FILE: Humanoid,
-			NAMESET_FILE_FIRST: StdFirst,
-			NAMESET_FILE_SURNAME: StdLast,
-			PORTRAIT_FILE: Undead,
+				SPRITE_FILE: Undead,
+		SPRITE_SKELLETON_FILE: Humanoid,
+		NAMESET_FILE_FIRST: StdFirst,
+		NAMESET_FILE_SURNAME: StdLast,
+		PORTRAIT_FILE: Undead,
 
-			ADDONS: [
-				{
-					BELOW_HEAD: false,
-					SPRITE_FILE: NobilityCloakMedium,
-                    ADDON_INDEX: 2,
-					CONDITIONS: {
-						EQUAL: {
-							POPULATION_NOBLES_I: 1,
-						},
+		ADDONS: [
+			{
+				BELOW_HEAD: false,
+				SPRITE_FILE: NobilityCloakMedium,
+				ADDON_INDEX: 2,
+				CONDITIONS: {
+					EQUAL: {
+						POPULATION_NOBLES_I: 1,
 					},
 				},
-				{
-                    BELOW_HEAD: false,
-                    ADDON_INDEX: 0,
-                    CONDITIONS: {
-                        GREATER: {
-                            EQUIP_BATTLE_ARMOUR_PLATE_I: 0,
-                        },
-                    },
-                    COLOR: ARMOUR,
+			},
+			{
+				BELOW_HEAD: false,
+				ADDON_INDEX: 0,
+				CONDITIONS: {
+					GREATER: {
+						EQUIP_BATTLE_ARMOUR_PLATE_I: 0,
+					},
 				},
-                {
-                    BELOW_HEAD: true,
-                    ADDON_INDEX: 0,
-                    CONDITIONS: {
-                        GREATER: {
-                            EQUIP_BATTLE_ARMOUR_LEATHER_I: 0,
-                        },
-                    },
-                    COLOR: ARMOUR,
-                },
-			],
+				COLOR: ARMOUR,
+			},
+			{
+				BELOW_HEAD: true,
+				ADDON_INDEX: 0,
+				CONDITIONS: {
+					GREATER: {
+						EQUIP_BATTLE_ARMOUR_LEATHER_I: 0,
+					},
+				},
+				COLOR: ARMOUR,
+			},
+		],
 
-			FACE: [
+		FACE: [
+			{
+				FRAMES: [
+					Undead_Faces: 0,
+					Undead_Faces: 1,
+					Undead_Faces: 2,
+					Undead_Faces: 3,
+				],
+				COLOR: SKIN_ZOMBIES,
+					
+			},
+			{
+				FRAMES: [
+					Undead_Eyes: 0,
+					Undead_Eyes: 1,
+					Undead_Eyes: 2,
+					Undead_Eyes: 3,
+					],
+			},
+
+			**Hair		
+			{
+				FRAMES: [
+					Undead_Hair: 0,
+					Undead_Hair: 1,
+					Undead_Hair: 2,
+					Undead_Hair: 3,
+					Undead_Hair: 4,
+					Undead_Hair: 5,
+					Undead_Hair: 6,
+					Undead_Hair: 7,
+					Undead_Hair: 8,
+					Undead_Hair: 9,
+					Undead_Hair: 10,
+					Undead_Hair: 11,
+					Undead_Hair: 12,
+					Undead_Hair: 13,
+					Undead_Hair: 14,
+					Undead_Hair: 15,
+					Undead_Hair: 16,
+					Undead_Hair: 17,
+					Undead_Hair: 18,
+					Undead_Hair: 19,
+				],
+				COLOR: HAIR,
+			},
+		],	
+	},
+
+	** SKELETONS
+	{
+		OCCURRENCE: 0.5,
+		OCCURRENCE_EXTRA1: 0.5,
+		OCCURRENCE_EXTRA2: 0.5,
+		COLOR_SKIN: SKIN_SKELETONS,
+		COLOR_LEG: SKIN_SKELETONS,
+		COLOR_EXTRA1: SKIN_SKELETONS,
+		COLOR_EXTRA2: SKIN_SKELETONS,
+
+				SPRITE_FILE: Undead,
+		SPRITE_SKELLETON_FILE: Humanoid,
+		NAMESET_FILE_FIRST: StdFirst,
+		NAMESET_FILE_SURNAME: StdLast,
+		PORTRAIT_FILE: Undead,
+
+		ADDONS: [
+			{
+				BELOW_HEAD: false,
+				SPRITE_FILE: NobilityCloakMedium,
+				ADDON_INDEX: 2,
+				CONDITIONS: {
+					EQUAL: {
+						POPULATION_NOBLES_I: 1,
+					},
+				},
+			},
+			{
+				BELOW_HEAD: false,
+				ADDON_INDEX: 0,
+				CONDITIONS: {
+					GREATER: {
+						EQUIP_BATTLE_ARMOUR_PLATE_I: 0,
+					},
+				},
+				COLOR: ARMOUR,
+			},
+			{
+				BELOW_HEAD: true,
+				ADDON_INDEX: 0,
+				CONDITIONS: {
+					GREATER: {
+						EQUIP_BATTLE_ARMOUR_LEATHER_I: 0,
+					},
+				},
+				COLOR: ARMOUR,
+			},
+		],
+
+		FACE: [
 				{
 					FRAMES: [
-						Undead_Faces: 0,
-						Undead_Faces: 1,
-						Undead_Faces: 2,
-						Undead_Faces: 3,
+						Undead_Skeleton_Faces: 0,
+						Undead_Skeleton_Faces: 1,
+						Undead_Skeleton_Faces: 2,
+						Undead_Skeleton_Faces: 3,
 					],
-					COLOR: SKIN,
+					COLOR: SKIN_SKELETONS,
 						
 				},
 				{
 					FRAMES: [
-						Undead_Eyes: 0,
-						Undead_Eyes: 1,
-						Undead_Eyes: 2,
-						Undead_Eyes: 3,
-						],
-					VALUES: [
-							{R: 0, G: 0, B: 0,},
-							{R: 61, G: 60, B: 94,},
-							{R: 120, G: 92, B: 109,},
-							{R: 79, G: 28, B: 28,},
-							{R: 40, G: 61, B: 41,},
-							{R: 70, G: 107, B: 104,},
-							{R: 207, G: 151, B: 43,},
-							],
-				},
-
-				**Hair		
-				{
-					FRAMES: [
-						Undead_Hair: 0,
-						Undead_Hair: 1,
-						Undead_Hair: 2,
-						Undead_Hair: 3,
-						Undead_Hair: 4,
-						Undead_Hair: 5,
-						Undead_Hair: 6,
-						Undead_Hair: 7,
-						Undead_Hair: 8,
-						Undead_Hair: 9,
-						Undead_Hair: 10,
-						Undead_Hair: 11,
-						Undead_Hair: 12,
-						Undead_Hair: 13,
-						Undead_Hair: 14,
-						Undead_Hair: 15,
-						Undead_Hair: 16,
-						Undead_Hair: 17,
-						Undead_Hair: 18,
-						Undead_Hair: 19,
+						Undead_Skeleton_Faces: 0,
+						Undead_Skeleton_Faces: 1,
+						Undead_Skeleton_Faces: 2,
+						Undead_Skeleton_Faces: 3,
 					],
-					COLOR: HAIR,
 				},
-			],	
+		],	
 	},
 ],
 

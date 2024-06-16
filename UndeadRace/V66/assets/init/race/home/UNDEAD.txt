@@ -5,13 +5,13 @@ CITIZEN: {
 			RESOURCES: {
 			
 			},
-			FLOOR: DARK1,
+			FLOOR: WOOD_SQUARE,
 		},
 		{
 			RESOURCES: {
-				WOOD: 2,
+				STONE: 2,
 			},
-			FLOOR: DARK2,
+			FLOOR: STONE1,
 		},
 	],
 

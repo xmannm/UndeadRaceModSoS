@@ -30,7 +30,7 @@ WORK: {
 },
 INDUSTRY: {
 	IN: {
-		MEAT: 0.5,
+		MEAT: 1,
 	},
 	OUT: {
 		
@@ -44,8 +44,8 @@ SPRITES: {
 		SHADOW_LENGTH: 1,
 		ROTATES: false,
 		FRAMES: [
-			NURSERY: 8,
-			NURSERY: 9,
+			NURSERY_UNDEAD: 8,
+			NURSERY_UNDEAD: 9,
 		],
 	},
 	1x1_CRIB_TOP: {
