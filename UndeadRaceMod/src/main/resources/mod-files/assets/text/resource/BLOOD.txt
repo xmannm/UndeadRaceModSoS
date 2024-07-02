@@ -1,0 +1,3 @@
+NAME: "Blood",
+NAMES: "Blood",
+DESC: "Blood is essential for necromancy.",

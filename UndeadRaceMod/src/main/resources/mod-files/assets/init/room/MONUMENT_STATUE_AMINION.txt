@@ -1,0 +1,67 @@
+ICON: 32->MONUMENT->6,
+RESOURCES: [STONE_CUT, BLOOD,],
+AREA_COSTS: [0,0,],
+MINI_COLOR: 200_139_204,
+FLOOR: DARK3,
+SOLID: true,
+ITEMS: [
+	{
+		COSTS: [4, 2,],
+		STATS: [],
+	},
+],
+STANDING: {
+	CITIZEN: 0,
+	NOBLE: 0,
+	SLAVE: 0,
+	PRIO: 22,
+	MULTIPLIER: 8,
+},
+ENVIRONMENT_EMIT: {
+	DREAD: {
+		VALUE: 1,
+		RADIUS: 1,
+	},
+	AWE: {
+		VALUE: 1,
+		RADIUS: 1,
+	},
+},
+SPRITES: {
+	1x1: {
+		FPS: 0,
+		SHADOW_LENGTH: 24,
+		SHADOW_HEIGHT: 0,
+		ROTATES: true,
+		FRAMES: [
+			MONUMENT: 1,
+		],
+	},
+	2x2: {
+		FPS: 0,
+		SHADOW_LENGTH: 24,
+		SHADOW_HEIGHT: 0,
+		ROTATES: true,
+		FRAMES: [
+			MONUMENT: 1,
+		],
+	},
+	3x3: {
+		FPS: 0,
+		SHADOW_LENGTH: 24,
+		SHADOW_HEIGHT: 0,
+		ROTATES: true,
+		FRAMES: [
+			MONUMENT: 1,
+		],
+	},
+	FLOOR_COMBO: {
+		COLOR: {R:255, G:240, B:220,},
+		SHADOW_LENGTH: 0,
+		SHADOW_HEIGHT: 0,
+		FRAMES: [
+			COMBO_PODEUM: 1,
+		],
+	},
+},
+

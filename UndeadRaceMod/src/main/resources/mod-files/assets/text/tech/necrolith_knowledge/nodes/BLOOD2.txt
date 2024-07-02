@@ -1,0 +1,2 @@
+NAME: "Blood Refiner Upgrade",
+DESC: "Learn even more effective ways to produce blood from meat.",

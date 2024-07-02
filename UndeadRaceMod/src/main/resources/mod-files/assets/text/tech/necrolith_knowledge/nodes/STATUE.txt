@@ -1,0 +1,2 @@
+NAME: "Statue of Aminion",
+DESC: "Unlocks a statue dedicated to Aminion. Radiates dread and awe.",

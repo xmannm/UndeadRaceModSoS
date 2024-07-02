@@ -1,0 +1,12 @@
+INFO: {
+	NAME: "Statue of Aminion",
+	NAMES: "Statues of Aminion",
+	DESC: "Spreads both awe and dread in your settlement",
+},
+
+ITEMS: [
+	{
+		NAME: "Statues of Aminion",
+		DESC: "Big stone monuments dedicated to Aminion.",
+	},
+],

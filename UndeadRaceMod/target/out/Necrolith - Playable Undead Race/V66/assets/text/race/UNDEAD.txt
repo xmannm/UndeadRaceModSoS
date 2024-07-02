@@ -1,0 +1,54 @@
+NAME: "Necrolith",
+NAMES: "Necroliths",
+POSSESSIVE: "Necrolithian",
+DESC: 
+"The Necroliths were originaly a race of undead warriors, raised by the dark god Aminion during the War of the Gods. They are resilient, relentless, and possess a hunger for flesh. While their skills are limited, their unwavering morale and rapidly growing numbers make them a formidable force. However, no immigration might make for a challanging start though.
+",
+DESC_LONG:
+"Forged in the fires of chaos by the malevolent god Aminion during the first War of the Gods, the Necroliths are the most vile race of undead warriors. 
+%r%%r%
+In the aftermath of Aminion's imprisonment, the Necroliths fell into a state of dormancy, their numbers dwindling as they retreated into the shadows. However, with the promise of Aminion's return, they have begun to stir once more. Modern Necroliths, though not as potent as their predecessors, remain a formidable threat to all living races.
+%r%%r%
+Despite lacking any refined skills, their rapid reproduction, excellent battle morale and low demands make them invaluable servants, provided their need for flesh is continually met.
+",
+
+
+ARMY_NAMES: [
+	"The Manslayers",
+	"Dark Lords Banner",
+	"Flesheaters",
+	"Wrath of Kathi",
+	"The Spawns of Shneda",
+	"The Horde of Aminion",
+	"The Horde of Gnosh",
+	"The Conquerors of the Ethen Hills",
+	"The Swords of Aminion",
+	"The Deadly Brigands",
+	"The Destroyers of Mendive",
+	"The Original Slashers",
+	"The Pain of Men",
+	"The Superslayers",
+	"The Scourge of the Living",
+	"The Nightmare Brigands",
+	"The Deathbringers",
+	"The Sharpests Daggers",
+	"The Deadly Killers",
+	"The Swift Despatchers",
+	"The Super Killers",
+	"The Nightmare Creatures",
+],
+
+CHALLENGE: "Hard",
+
+PROS: [
+	"Fast reproduction,
+	"Lower demands",
+	"Excellent morale",
+],
+
+CONS: [
+	"Very limited skills across the board",
+	"Bad food producers",
+	"High hunger for meat"
+	"NO IMMIGRATION",
+],

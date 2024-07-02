@@ -1,0 +1,45 @@
+INFO: {
+	NAME: "Blood Refiner",
+	NAMES: "Blood Refiners",
+	DESC: "Refiner that presses meat into blood.",
+},
+
+BONUS: {
+	NAME: "Refining blood",
+	DESC: "Increases effectiveness of Blood Refiners",
+},
+
+WORK: {
+	TITLE: "Blood Refiner",
+	VERB: "Refining blood",
+},
+
+STATS: [
+	{
+		NAME: "Workers",
+		DESC: "The amount of workers",
+	},
+	{
+		NAME: "Efficiency",
+		DESC: "Efficiency increases production",
+	},
+	{
+		
+	},
+],
+
+ITEMS: [
+	{
+		NAME: "Blood Press",
+		DESC: "Where subjects work and produce blood",
+	},
+	{
+		NAME: "Storage",
+		DESC: "Storage for the output.",
+	},
+	{
+		NAME: "Auxiliary Table",
+		DESC: "Adds Efficiency to the room",
+	},
+],
+

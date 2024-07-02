@@ -1,0 +1,7 @@
+VERSION: "1.0.0",
+GAME_VERSION_MAJOR: 66,
+GAME_VERSION_MINOR: 48,
+NAME: "Necrolith - Playable Undead Race",
+DESC: "This mode adds a playable undead race called Necroliths.",
+AUTHOR: "Kelgar",
+INFO: "Can you conquer the world with an army of the dead?",

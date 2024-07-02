@@ -1,0 +1,32 @@
+INFO: {
+	NAME: "Blood Well",
+	NAMES: "Blood Wells",
+	DESC: "Well designed for dread loving bloodthirsty races.",
+	WIKI: {
+		CATEGORY: "Service",
+		NAME: "Blood Well",
+		TEXT: "Well designed for dread loving bloodthirsty races.",
+		CATEGORIES: [],
+	},
+},
+
+STATS: [
+	{
+		NAME: "Spots",
+		DESC: "Available spots",
+	},
+],
+
+ITEMS: [
+	{
+		NAME: "Blood Well",
+		DESC: "",
+	},
+],
+
+SERVICE: {
+	NAME: "Blood Well",
+	NAMES: "Blood Wells",
+	DESC: "Well designed for dread loving bloodthirsty races.",
+	VERB: "Sipping blood",
+},
