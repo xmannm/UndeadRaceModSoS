@@ -140,6 +140,12 @@ STATS: {
 		NOBLE: 1,
 		MULTIPLIER: 0.5,
 	},
+    STORED_BLOOD: {
+        CITIZEN: 2.0,
+        NOBLE: 3,
+        MULTIPLIER: 0.2,
+        INVERTED: true,
+    },
 	MONUMENTS_MONUMENT_TREE: {
 		
 	},

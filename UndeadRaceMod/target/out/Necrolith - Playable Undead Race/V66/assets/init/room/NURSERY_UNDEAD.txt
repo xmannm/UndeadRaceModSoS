@@ -1,8 +1,4 @@
-ICON: {
-	BG: 32->DEATH->3,
-	FG: 24->race->Undead->0,
-	SHADOW: 2,
-},
+ICON: 32->NURSERY_UNDEAD->0,
 RESOURCES: [BLOOD,WOOD,FURNITURE,],
 AREA_COSTS: [0,0.2,0,],
 FLOOR: DARK1,
@@ -19,6 +15,7 @@ ITEMS: [
 		STATS: [0,0,4,],
 	},
 ],
+
 WORK: {
 	SHIFT_OFFSET: 0.125,
 	SOUND: gore->Squish*,
@@ -34,7 +31,7 @@ INDUSTRY: {
 	},
 },
 RACE: UNDEAD,
-INCUBATION_DAYS: 1,
+INCUBATION_DAYS: 3,
 ENVIRONMENT_EMIT: {
 	DREAD: {
 		VALUE: 1,

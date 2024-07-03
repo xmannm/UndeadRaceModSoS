@@ -151,6 +151,12 @@ STATS: {
 	RELIGION_TEMPLE: {
 		CITIZEN: 5,
 	},
+	STORED_BLOOD: {
+        CITIZEN: 3.0,
+        NOBLE: 3,
+        MULTIPLIER: 0.2,
+        INVERTED: true,
+    },
 },
 SPRITE_FILE: CANTOR,
 ICON_SMALL: 24->race->Cantor->0,

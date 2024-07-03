@@ -86,7 +86,7 @@ COLORS: {
 	EYE: {
 		VALUES: [
 			**Brown
-			{R: 65, G: 43, B: 31,},	
+			{R: 65, G: 43, B: 31,},
 			**Blue
 			{R: 170, G: 180, B: 200,},
 			**Green
@@ -132,12 +132,12 @@ COLORS: {
 CHILD: {
 	COLOR_SKIN: SKIN_ZOMBIES,
 	COLOR_LEG: LEG,
-	
+
 	SPRITE_FILE: ChildHumanoid,
 	SPRITE_SKELLETON_FILE: Humanoid_small,
 	NAMESET_FILE_FIRST: StdFirst,
 	NAMESET_FILE_SURNAME: StdLast,
-	
+
 	ADDONS: [
 		{
 			BELOW_HEAD: false,
@@ -158,14 +158,14 @@ TYPES: [
 		COLOR_EXTRA1: SKIN_ZOMBIES,
 		COLOR_EXTRA2: SKIN_ZOMBIES,
 
-				SPRITE_FILE: Undead,
+        SPRITE_FILE: Undead,
 		SPRITE_SKELLETON_FILE: Humanoid,
 		NAMESET_FILE_FIRST: StdFirst,
 		NAMESET_FILE_SURNAME: StdLast,
 		PORTRAIT_FILE: Undead,
 
-		ADDONS: [	
-	
+		ADDONS: [
+
 			{
 				BELOW_HEAD: true,
 				ADDON_INDEX: 4,
@@ -218,6 +218,19 @@ TYPES: [
 		],
 
 		FACE: [
+		    **Chest
+            {
+                FRAMES: [
+                    Chest: 0,
+                    Chest: 1,
+                    Chest: 2,
+                    Chest: 3,
+                ],
+                COLOR: SKIN_ZOMBIES,
+                STAINS: false,
+                OFF_Y: 0,
+            },
+            **Faces
 			{
 				FRAMES: [
 					Undead_Faces: 0,
@@ -226,8 +239,9 @@ TYPES: [
 					Undead_Faces: 3,
 				],
 				COLOR: SKIN_ZOMBIES,
-					
+
 			},
+			**Eyes
 			{
 				FRAMES: [
 					Undead_Eyes: 0,
@@ -237,7 +251,7 @@ TYPES: [
 					],
 			},
 
-			**Hair		
+			**Hair
 			{
 				FRAMES: [
 					Undead_Hair: 0,
@@ -263,7 +277,7 @@ TYPES: [
 				],
 				COLOR: HAIR,
 			},
-		],	
+		],
 	},
 
 	** SKELETONS
@@ -276,7 +290,7 @@ TYPES: [
 		COLOR_EXTRA1: SKIN_SKELETONS,
 		COLOR_EXTRA2: SKIN_SKELETONS,
 
-				SPRITE_FILE: Undead,
+        SPRITE_FILE: Undead,
 		SPRITE_SKELLETON_FILE: Humanoid,
 		NAMESET_FILE_FIRST: StdFirst,
 		NAMESET_FILE_SURNAME: StdLast,
@@ -317,7 +331,17 @@ TYPES: [
 		],
 
 		FACE: [
-
+                **Chest
+                {
+                    FRAMES: [
+                        Chest: 20,
+                        Chest: 21,
+                    ],
+                    COLOR: SKIN_SKELETONS,
+                    STAINS: false,
+                    OFF_Y: 2,
+                },
+                **Faces
 				{
 					FRAMES: [
 						Undead_Skeleton_Faces: 0,
@@ -326,9 +350,9 @@ TYPES: [
 						Undead_Skeleton_Faces: 3,
 					],
 					COLOR: SKIN_SKELETONS,
-						
 				},
-				
+
+
 		],	
 	},
 ],
